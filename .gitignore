@@ -1,0 +1,7 @@
+# aphrodite's child's 666
+
+.dump/
+build/
+
+# temporary ignores
+spec/
