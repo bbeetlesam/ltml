@@ -9,11 +9,27 @@ import (
 const (
 	version     = "v0.0.0"
 	versionName = "Preserved in Aspic"
-	helpMsg     = "Should show help here.\nNo one told you when to run, and you missed the starting gun."
 )
 
+const helpMsg = `CLI tool for compiling and running LTML/LTSS files.
+
+USAGE:
+  ltml <command> [options]
+
+COMMANDS:
+  run <file>      Run an LTML file
+  build <file>    Build an LTML file to a plain shell script
+  help            Show this very informational help
+  version         Show the version of this program
+
+EXAMPLES:
+  $ ltml run file.ltml
+  $ ltml build ready.ltml
+  $ ltml help
+`
+
 func showHelp() {
-	fmt.Println(helpMsg)
+	fmt.Print(helpMsg)
 }
 
 func showVersion() {
